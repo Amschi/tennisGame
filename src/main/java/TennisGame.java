@@ -5,7 +5,7 @@ public class TennisGame {
     public static final String J1_WINS_TEXT = "J1 WINS";
     public static final String J2_WINS_TEXT = "J2 WINS";
     public static final Integer NOMBRE_DE_POINTS_JEU = 4;
-    public static final Integer NOMBRE_DE_POINTS_THIRTY = 4;
+    public static final Integer NOMBRE_DE_POINTS_THIRTY = 2;
 
     Player P1 = new Player(1, 0);
     Player P2 = new Player(2, 0);
