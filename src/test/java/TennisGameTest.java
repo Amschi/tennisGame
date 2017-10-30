@@ -137,4 +137,36 @@ public class TennisGameTest {
         // THEN
         assertThat(tennisGame.getScore()).isEqualTo(expected);
     }
+
+    @Test
+    public void scorePoint_return_J1_wins() {
+        // GIVEN
+        String expected = "J1 WINS";
+
+        // WHEN
+        tennisGame.scorePoint(player1);
+        tennisGame.scorePoint(player1);
+        tennisGame.scorePoint(player1);
+        tennisGame.scorePoint(player1);
+
+        // THEN
+        assertThat(tennisGame.getScore()).isEqualTo(expected);
+    }
+
+
+    @Test
+    public void scorePoint_return_J2_wins() {
+        // GIVEN
+        String expected = "J2 WINS";
+
+        // WHEN
+        tennisGame.scorePoint(player2);
+        tennisGame.scorePoint(player2);
+        tennisGame.scorePoint(player2);
+        tennisGame.scorePoint(player2);
+
+        // THEN
+        assertThat(tennisGame.getScore()).isEqualTo(expected);
+    }
+
 }
